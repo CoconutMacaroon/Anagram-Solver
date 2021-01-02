@@ -2,11 +2,11 @@ import re
 
 VALID_CHARACTERS_REGEX = r'[^a-zA-Z0-9]'
 
-def solve_anagram(word, dict_file):
+def solve_anagram(word: str, dict_file_path: str):
     # solves an one-word anagram
 
     # read the dictionary file
-    data = [word.lower() for word in open(dict_file, 'r').read().split('\n')]
+    data = [word.lower() for word in open(dict_file_path, 'r').read().split('\n')]
 
     # make the word lowercase
     word = word.lower()
@@ -21,4 +21,4 @@ def solve_anagram(word, dict_file):
             anagrams.append(data[i])
     return anagrams 
 
-str_sort = lambda string: ''.join(sorted(string))
+str_sort = lambda text: ''.join(sorted(text))
