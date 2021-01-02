@@ -21,5 +21,4 @@ def solve_anagram(word, dict_file):
             anagrams.append(data[i])
     return anagrams 
 
-def str_sort(string):
-    return ''.join(sorted(string))
+str_sort = lambda string: ''.join(sorted(string))
