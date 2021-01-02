@@ -6,7 +6,6 @@ def test_solve_anagram():
     assert 'pots' in solve_anagram('ToPs', 'dictionary2.txt')
     assert 'pots' in solve_anagram('to ps', 'dictionary2.txt')
     assert 'pots' in solve_anagram('!to.ps', 'dictionary2.txt')
-    assert False
 
 def test_str_sort():
     assert 'abcd' == str_sort('dcba')
