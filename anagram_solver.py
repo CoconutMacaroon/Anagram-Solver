@@ -1,5 +1,7 @@
 import re
 
+VALID_CHARACTERS_REGEX = r'[^a-zA-Z0-9]'
+
 def solve_anagram(word, dict_file):
     # solves an one-word anagram
 
@@ -10,7 +12,7 @@ def solve_anagram(word, dict_file):
     word = word.lower()
 
     # get rid of random characters in the word
-    word = re.sub(r'[^a-zA-Z0-9]', '', word)
+    word = re.sub(VALID_CHARACTERS_REGEX, '', word)
 
     anagrams = []
 
