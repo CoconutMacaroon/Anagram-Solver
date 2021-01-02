@@ -11,7 +11,7 @@ def solve_anagram(word, dict_file):
 
     # get rid of random characters in the word
     word = re.sub(r'[^a-zA-Z0-9]', '', word)
-    
+
     anagrams = []
 
     for i in range(len(data)):
